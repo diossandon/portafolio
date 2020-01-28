@@ -13,4 +13,6 @@ if (this.hash !== "") {
   });
 }
 });
+$('[data-toggle="popover"]').popover();
+
 });
