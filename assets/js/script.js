@@ -1,18 +1,18 @@
-$(function(){
+$(function() {
 
-  $("a").click(function(event){
-if (this.hash !== "") {
-  event.preventDefault();
+  $("a").click(function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
 
-  var tag = this.hash;
+      var tag = this.hash;
 
-  $("html, body").animate({
-    scrollTop: $(tag).offset().top
-  }, 800, function(){
-    window.location.hash = tag;
+      $("html, body").animate({
+        scrollTop: $(tag).offset().top
+      }, 800, function() {
+        window.location.hash = tag;
+      });
+    }
   });
-}
-});
-$('[data-toggle="popover"]').popover();
+  $('[data-toggle="popover"]').popover();
 
 });
